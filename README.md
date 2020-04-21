@@ -1,11 +1,21 @@
-Docker-compose with RoadRunner, Symfony 5 and PostgreSQL
+# Symfony 5 microservice for docker basd on RoadRunner
+### Symfony 5 + RoadRunner + PHP 7.4 + PostgreSQL + Adminer: Docker Compose Build
+#### Introduction
+This is a base docker-compose build with the pure Symfony 5 project. It is
+workinv via RoadRunner with PHP 7.4 and connected to the PostgreSQL, also it has Adminer for the DB management.
+This project has additional monolog bundle for logs and doctrine budnle for checking DB connection.
 
-Symfony 5 is pure with extra monolog bundle for logs and doctrine budnle to check DB connection
+#### Getting started
+Start on of the next environment:
+* make up-prod (For Production - working as daemon)
+* make up-dev (Fod Development)
+* make up-debug (For Debugging. XDebug - NOT WORKING, please open a MR if you will figure out how to run it)
 
-Start one of the environment by command:
 
-make up-prod (For Production Configurations)
-make up-dev (Fod Development Configurations)
-make up-debug (For Debugging and XDebug - NOT WORKING, please open a MR if you will figure out how to run it)
-
-Open http://localhost:8080/
+#### Accessing
+1. http://localhost:8080/ - You should see default Symfony Welcome Page
+2. http://localhost:8081/ - Adminer DataBase Management Panel
+3. PostgreSQL:
+- database:db
+- user:db
+- password:db
