@@ -16,6 +16,6 @@ Start on of the next environment:
 1. http://localhost:8080/ - You should see default Symfony Welcome Page
 2. http://localhost:8081/ - Adminer DataBase Management Panel
 3. PostgreSQL:
-- database:db
-- user:db
-- password:db
+* database:db
+* user:db
+* password:db
