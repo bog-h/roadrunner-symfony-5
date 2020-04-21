@@ -1,0 +1,33 @@
+version: '3.7'
+services:
+  db:
+    build:
+      context: .docker/pgsql
+    environment:
+      POSTGRES_DB: db
+      POSTGRES_USER: db
+      POSTGRES_PASSWORD: db
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - 5432:5432
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data/pgdata
+      - .docker/logs/postgresql/:/var/log/postgresql
+  php-rr:
+    build:
+      context: .docker/php
+    ports:
+      - 8080:8080
+      - 6001:6001
+    volumes:
+      - .:/usr/src/app
+    depends_on:
+      - db
+    links:
+      - db
+  adminer:
+    image: adminer:4.7.6-standalone
+    ports:
+      - 8081:8080
+    depends_on:
+      - db
