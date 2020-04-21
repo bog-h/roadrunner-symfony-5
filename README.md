@@ -1,4 +1,4 @@
-# Symfony 5 microservice for docker basd on RoadRunner
+# Symfony 5 microservice working via RoadRunner and docker-compose
 ### Symfony 5 + RoadRunner + PHP 7.4 + PostgreSQL + Adminer: Docker Compose Build
 #### Introduction
 This is a base docker-compose build with the pure Symfony 5 project. It is
