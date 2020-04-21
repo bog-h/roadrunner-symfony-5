@@ -6,6 +6,8 @@ working via RoadRunner with PHP 7.4 and connected to the PostgreSQL, also it has
 This project has additional monolog bundle for logs and doctrine budnle for checking DB connection.
 
 #### Getting started
+Create empty folder with name 'pgdata'
+
 Start on of the next environment:
 * make up-prod (For Production - working as daemon)
 * make up-dev (Fod Development)
