@@ -1,8 +1,8 @@
 # Symfony 5 microservice working via RoadRunner and docker-compose
 ### Symfony 5 + RoadRunner + PHP 7.4 + PostgreSQL + Adminer: Docker Compose Build
 #### Introduction
-This is a base docker-compose build with the pure Symfony 5 project. It is
-workinv via RoadRunner with PHP 7.4 and connected to the PostgreSQL, also it has Adminer for the DB management.
+This is a basic docker-compose build with the pure Symfony 5 project. It is
+working via RoadRunner with PHP 7.4 and connected to the PostgreSQL, also it has Adminer for the DB management.
 This project has additional monolog bundle for logs and doctrine budnle for checking DB connection.
 
 #### Getting started
