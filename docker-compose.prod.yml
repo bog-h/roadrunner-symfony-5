@@ -1,6 +1,4 @@
 version: '3.7'
 services:
   php-rr:
-    build:
-      target: base
     command: /bin/sh "start.sh" prod
