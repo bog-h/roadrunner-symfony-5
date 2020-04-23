@@ -3,4 +3,4 @@ services:
   php-rr:
     build:
       target: debug
-    command: /bin/sh "start.sh" debug
+    command: /bin/sh "start.sh" dev
